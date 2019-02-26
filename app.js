@@ -1,4 +1,4 @@
-const apiKey = '<your giphy developer api key here>';
+const apiKey = '<your api key here>';
 const api = 'https://api.giphy.com/v1/gifs/trending'
 
 const main = document.querySelector('.container');
@@ -12,6 +12,7 @@ function createMeme(meme) {
               height='${meme.images.downsized_medium.height}'
               width='${meme.images.downsized_medium.width}'/>
         </a>
+        <p>Big Title: ${meme.title} </p>
         </div>`
 }
 
